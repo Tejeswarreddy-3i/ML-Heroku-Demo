@@ -6,4 +6,4 @@ cd /home/ubuntu/ML
 python3 -m venv environment
 source environment/bin/activate
 sudo python3 -m pip install --upgrade pip
-pip3 install -r requirements.txt
+sudo pip3 install -r requirements.txt
