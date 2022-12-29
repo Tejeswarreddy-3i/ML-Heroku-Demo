@@ -1,0 +1,3 @@
+cd /home/ubuntu/ML/
+source environment/bin/activate
+python application.py
