@@ -1,0 +1,29 @@
+version: 0.0
+os: linux
+files:
+ - source: /Src
+   destination: /home/ubuntu/ML
+permissions:
+  - object: /home/ubuntu/ML/application.py
+    owner: ubuntu
+    mode: 644
+    type:
+      - file
+  - object: /home/ubuntu/ML/requirements.txt
+    owner: ubuntu
+    mode: 644
+    type:
+      - file
+hooks:
+  ApplicationStop:
+    - location: Scripts/stop_server
+      timeout: 300
+      runas: root
+  BeforeInstall:
+    - location: Scripts/install_dependencies
+      timeout: 300
+      runas: root
+  ApplicationStart:
+    - location: Scripts/start_server
+      timeout: 300
+      runas: root
