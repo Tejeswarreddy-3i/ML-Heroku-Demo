@@ -1,7 +1,7 @@
 version: 0.0
 os: linux
 files:
- - source: /Src
+ - source: Src
    destination: /home/ubuntu/ML
 permissions:
   - object: /home/ubuntu/ML/application.py
