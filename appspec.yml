@@ -2,14 +2,14 @@ version: 0.0
 os: linux
 files:
  - source: Src
-   destination: /home/ec2-user/ML
+   destination: /home/ubuntu/mlops
 permissions:
-  - object: /home/ec2-user/ML/application.py
+  - object: /home/ubuntu/mlops/application.py
     owner: ubuntu
     mode: 644
     type:
       - file
-  - object: /home/ec2-user/ML/requirements.txt
+  - object: /home/ubuntu/mlops/requirements.txt
     owner: ubuntu
     mode: 644
     type:
