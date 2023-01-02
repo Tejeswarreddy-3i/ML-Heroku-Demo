@@ -2,14 +2,14 @@ version: 0.0
 os: linux
 files:
  - source: Src
-   destination: /home/ubuntu/ML
+   destination: /home/ec2-user/ML
 permissions:
-  - object: /home/ubuntu/ML/application.py
+  - object: /home/ec2-user/ML/application.py
     owner: ubuntu
     mode: 644
     type:
       - file
-  - object: /home/ubuntu/ML/requirements.txt
+  - object: /home/ec2-user/ML/requirements.txt
     owner: ubuntu
     mode: 644
     type:
