@@ -2,7 +2,7 @@
 sudo apt-get update -y
 sudo apt-get -y upgrade
 sudo apt-get install -y python3-pip
-cd /home/ubuntu/ML
+cd /home/ubuntu/mlops
 python3 -m venv environment
 source environment/bin/activate
 sudo python3 -m pip install --upgrade pip
