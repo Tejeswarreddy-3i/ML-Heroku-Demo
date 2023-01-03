@@ -17,5 +17,6 @@ cd /home/ec2-user/mlops
 python3 -m venv environment
 source environment/bin/activate
 sudo python3 -m pip install --upgrade pip
+sudo python3 -m pip install numpy
 sudo pip3 install -r requirements.txt
 sudo pip3 install numpy
