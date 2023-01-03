@@ -1,3 +1,5 @@
 cd /home/ec2-user/mlops/
 source environment/bin/activate
+sudo python3 -m pip install numpy
+sudo pip3 install numpy
 python3 application.py
