@@ -13,7 +13,7 @@ commented
 sudo yum update -y
 sudo yum -y upgrade
 sudo yum install -y python3-pip
-cd /home/ubuntu/mlops
+cd /home/ec2-user/mlops
 python3 -m venv environment
 source environment/bin/activate
 sudo python3 -m pip install --upgrade pip
