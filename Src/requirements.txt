@@ -9,3 +9,4 @@ scikit-learn==1.0.1
 matplotlib>=1.4.3
 pandas>=0.19
 numpy>=1.9.2
+sklearn==0.21.3
