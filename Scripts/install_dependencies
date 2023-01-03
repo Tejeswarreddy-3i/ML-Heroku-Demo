@@ -1,7 +1,18 @@
 #!/bin/bash
+<<commented
 sudo apt-get update -y
 sudo apt-get -y upgrade
 sudo apt-get install -y python3-pip
+cd /home/ubuntu/mlops
+python3 -m venv environment
+source environment/bin/activate
+sudo python3 -m pip install --upgrade pip
+sudo pip3 install -r requirements.txt
+commented
+
+sudo yum update -y
+sudo yum -y upgrade
+sudo yum install -y python3-pip
 cd /home/ubuntu/mlops
 python3 -m venv environment
 source environment/bin/activate
