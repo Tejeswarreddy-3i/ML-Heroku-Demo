@@ -49,7 +49,7 @@ hooks:
     - location: Scripts/stop_server
       timeout: 300
       runas: root
-  BeforeInstall:
+  AfterInstall:
     - location: Scripts/install_dependencies
       timeout: 300
       runas: root
