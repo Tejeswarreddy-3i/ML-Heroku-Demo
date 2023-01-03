@@ -1,16 +1,46 @@
+# version: 0.0
+# os: linux
+# files:
+#  - source: Src
+#    destination: /home/ubuntu/mlops
+# permissions:
+#   - object: /home/ubuntu/mlops/application.py
+#    owner: ubuntu
+#    mode: 644
+#    type:
+#      - file
+#  - object: /home/ubuntu/mlops/requirements.txt
+#    owner: ubuntu
+#    mode: 644
+#    type:
+#      - file
+#hooks:
+#  ApplicationStop:
+#    - location: Scripts/stop_server
+#      timeout: 300
+#      runas: root
+#  BeforeInstall:
+#    - location: Scripts/install_dependencies
+#      timeout: 300
+#      runas: root
+#  ApplicationStart:
+#    - location: Scripts/start_server
+#      timeout: 300
+#      runas: root
+
 version: 0.0
 os: linux
 files:
  - source: Src
-   destination: /home/ubuntu/mlops
+   destination: /home/ec2-user/mlops
 permissions:
-  - object: /home/ubuntu/mlops/application.py
-    owner: ubuntu
+  - object: /home/ec2-user/mlops/application.py
+    owner: ec2-user
     mode: 644
     type:
       - file
-  - object: /home/ubuntu/mlops/requirements.txt
-    owner: ubuntu
+  - object: /home/ec2-user/mlops/requirements.txt
+    owner: ec2-user
     mode: 644
     type:
       - file
