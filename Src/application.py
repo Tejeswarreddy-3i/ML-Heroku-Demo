@@ -1,7 +1,7 @@
 import numpy as np
 from flask import Flask, request, jsonify, render_template
 import pickle
-from scikit-learn import sklearn.linear_model._base
+import sklearn.linear_model._base
 
 app = Flask(__name__)
 model = pickle.load(open('model.pkl', 'rb'))
