@@ -25,8 +25,10 @@ y = dataset.iloc[:, -1]
 #Splitting Training and Test Set
 #Since we have a very small dataset, we will train our model with all availabe data.
 
-from sklearn.linear_model import LinearRegression
-regressor = LinearRegression()
+from sklearn import linear_model
+regressor = linear_model.LinearRegression()
+#from sklearn.linear_model import LinearRegression
+#regressor = LinearRegression()
 
 #Fitting model with trainig data
 regressor.fit(X, y)
